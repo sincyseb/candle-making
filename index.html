@@ -3,19 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wow Candles</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Wow Candles | Hand-poured soy candles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="header-div">Wow Candles</h1>
-        <div class="image-div">
-                <img src="images.jpeg" alt="A beautiful candle">
+
+<header class="site-header">
+    <nav class="nav container">
+        <a href="#home" class="logo">Wow Candles</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu">Menu</button>
+        <ul id="menu" class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#materials">Materials</a></li>
+            <li><a href="#steps">How it's made</a></li>
+            <li><a href="#contact" class="btn btn-small">Order now</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h1>Light a candle. Change the room.</h1>
+                <p>Hand-poured soy candles made in small batches, with cotton wicks and fragrance that fills a room without overwhelming it.</p>
+                <div class="hero-actions">
+                    <a href="#products" class="btn">Shop candles</a>
+                    <a href="#steps" class="btn btn-ghost">See how we make them</a>
+                </div>
+            </div>
+            <figure class="img-box hero-img">
+                <img src="images.jpeg" alt="A beautiful lit candle" onerror="this.remove()">
+            </figure>
         </div>
-        <div class="summary-div">
-            <p>Candle making is the craft of melting wax, adding wicks and optional scents or colors, and shaping them inside containers or molds</p>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container narrow">
+            <h2>What is candle making?</h2>
+            <p class="lead">Candle making is the craft of melting wax, adding wicks and optional scents or colours, and shaping them inside containers or molds.</p>
+            <p>Every Wow Candle is poured by hand, left to cure for several days, and tested before it reaches you, so it burns evenly and smells the way it should.</p>
+        </div>
+    </section>
+
+    <section id="products" class="section section-tint">
+        <div class="container">
+            <h2>Our candles</h2>
+            <p class="section-sub">Each candle is 200 g and burns for about 40 hours.</p>
+            <div class="grid">
+                <article class="card">
+                    <figure class="img-box"><img src="images/lavender.jpg" alt="Lavender Calm candle" onerror="this.remove()"></figure>
+                    <div class="card-body">
+                        <h3>Lavender Calm</h3>
+                        <p>Soft lavender with a hint of chamomile. Good for evenings.</p>
+                        <div class="card-foot"><span class="price">₹499</span><a href="#contact" class="btn btn-small">Order</a></div>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="img-box"><img src="images/vanilla.jpg" alt="Vanilla Glow candle" onerror="this.remove()"></figure>
+                    <div class="card-body">
+                        <h3>Vanilla Glow</h3>
+                        <p>Warm vanilla bean and a little caramel. Sweet, not heavy.</p>
+                        <div class="card-foot"><span class="price">₹449</span><a href="#contact" class="btn btn-small">Order</a></div>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="img-box"><img src="images/sandalwood.jpg" alt="Sandalwood Noir candle" onerror="this.remove()"></figure>
+                    <div class="card-body">
+                        <h3>Sandalwood Noir</h3>
+                        <p>Creamy sandalwood with smoky cedar. Our deepest scent.</p>
+                        <div class="card-foot"><span class="price">₹649</span><a href="#contact" class="btn btn-small">Order</a></div>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="img-box"><img src="images/jasmine.jpg" alt="Jasmine Bloom candle" onerror="this.remove()"></figure>
+                    <div class="card-body">
+                        <h3>Jasmine Bloom</h3>
+                        <p>Fresh night-blooming jasmine, light and floral.</p>
+                        <div class="card-foot"><span class="price">₹549</span><a href="#contact" class="btn btn-small">Order</a></div>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="img-box"><img src="images/ocean.jpg" alt="Ocean Mist candle" onerror="this.remove()"></figure>
+                    <div class="card-body">
+                        <h3>Ocean Mist</h3>
+                        <p>Sea salt, driftwood and cool air. Clean and bright.</p>
+                        <div class="card-foot"><span class="price">₹599</span><a href="#contact" class="btn btn-small">Order</a></div>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="img-box"><img src="images/chai.jpg" alt="Coconut Chai candle" onerror="this.remove()"></figure>
+                    <div class="card-body">
+                        <h3>Coconut Chai</h3>
+                        <p>Cardamom, ginger and coconut milk. Smells like a good morning.</p>
+                        <div class="card-foot"><span class="price">₹399</span><a href="#contact" class="btn btn-small">Order</a></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="materials" class="section">
+        <div class="container">
+            <h2>What goes into a candle</h2>
+            <p class="section-sub">Simple materials, chosen for a clean and even burn.</p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Material</th><th>What it does</th><th>Approx. cost</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Soy wax</td><td>The base. Burns slowly and cleanly.</td><td>₹350 / kg</td></tr>
+                        <tr><td>Beeswax</td><td>Blended in for a longer, brighter flame.</td><td>₹900 / kg</td></tr>
+                        <tr><td>Cotton wick</td><td>Carries the flame. Sized to the jar width.</td><td>₹5 each</td></tr>
+                        <tr><td>Fragrance oil</td><td>Gives the scent. Used at 6–8% of the wax.</td><td>₹120 / 10 ml</td></tr>
+                        <tr><td>Wax dye</td><td>Optional colour, added in tiny amounts.</td><td>₹60 / block</td></tr>
+                        <tr><td>Glass jar</td><td>Heat-safe container with a lid.</td><td>₹45 each</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <figure class="img-box wide-img">
+                <img src="images/materials.jpg" alt="Wax, wicks and fragrance oils laid out on a table" onerror="this.remove()">
+            </figure>
+        </div>
+    </section>
+
+    <section id="steps" class="section section-dark">
+        <div class="container">
+            <h2>How we make a candle</h2>
+            <ol class="steps">
+                <li><h3>Melt the wax</h3><p>Heat soy wax in a double boiler to about 75 °C until fully liquid.</p></li>
+                <li><h3>Fix the wick</h3><p>Stick the wick to the centre of the jar and hold it straight with a clip.</p></li>
+                <li><h3>Add colour and scent</h3><p>Let the wax cool to about 65 °C, then stir in dye and fragrance oil for two minutes.</p></li>
+                <li><h3>Pour</h3><p>Pour slowly at about 55 °C to avoid air bubbles and cracks.</p></li>
+                <li><h3>Cure</h3><p>Leave it undisturbed for 24 hours to set, then 3–7 days for the scent to develop.</p></li>
+                <li><h3>Trim and test</h3><p>Trim the wick to 5 mm and burn a test candle before packing.</p></li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container narrow center">
+            <h2>Order your candle</h2>
+            <p class="lead">Message us with the scent and quantity you want. We reply within a day.</p>
+            <div class="hero-actions center-actions">
+                <a href="mailto:hello@wowcandles.com" class="btn">Email us</a>
+                <a href="tel:+910000000000" class="btn btn-ghost-dark">Call us</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <p class="logo">Wow Candles</p>
+            <p>Hand-poured soy candles, made in small batches.</p>
+        </div>
+        <div>
+            <h4>Pages</h4>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#materials">Materials</a></li>
+                <li><a href="#steps">How it's made</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <ul>
+                <li>hello@wowcandles.com</li>
+                <li>+91 00000 00000</li>
+                <li>Kochi, Kerala</li>
+            </ul>
         </div>
     </div>
+    <p class="copyright container">© 2026 Wow Candles. All rights reserved.</p>
+</footer>
+
+<script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+        const open = menu.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open);
+    });
+    menu.addEventListener('click', e => {
+        if (e.target.tagName === 'A') {
+            menu.classList.remove('open');
+            toggle.setAttribute('aria-expanded', false);
+        }
+    });
+</script>
 </body>
-</html>
 </html>
