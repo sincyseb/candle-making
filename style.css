@@ -1,0 +1,90 @@
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #4a3025;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    max-width: 700px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(74, 48, 37, 0.15);
+}
+
+/* Page heading */
+.header-div {
+    font-size: 36px;
+    color: #b5651d;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Image section */
+.image-div {
+    margin-bottom: 25px;
+}
+
+.image-div img {
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #f3d5b5;
+    transition: transform 0.3s ease;
+}
+
+.image-div img:hover {
+    transform: scale(1.03);
+}
+
+/* Description section */
+.summary-div {
+    background-color: #fff3e4;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #b5651d;
+}
+
+.summary-div p {
+    font-size: 17px;
+    color: #654535;
+    line-height: 1.8;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .header-div {
+        font-size: 27px;
+    }
+
+    .image-div img {
+        height: 220px;
+    }
+
+    .summary-div p {
+        font-size: 15px;
+    }
+}
